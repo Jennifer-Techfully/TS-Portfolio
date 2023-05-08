@@ -1,10 +1,10 @@
-
+import React from 'react'
 import './Home.css'
 import me from '../../img/me.png'
 
 
 
-const Home = () => {
+const Home:React.FC = () => {
  return (
     <div className='home' id="home">
        <div className='h-left'> 

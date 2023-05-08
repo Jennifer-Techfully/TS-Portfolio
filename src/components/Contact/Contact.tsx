@@ -3,7 +3,7 @@ import './Contact.css'
 import emailjs from '@emailjs/browser'; 
 
 
-const Contact = () => {
+const Contact:React.FC = () => {
   const form=useRef<HTMLFormElement>(null);
   const [done,setDone]=useState(false)
   

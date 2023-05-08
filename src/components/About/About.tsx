@@ -4,7 +4,7 @@ import about2 from '../../img/about2.png'
 import a from '../../img/a.jpg'
 
 
-const About = () => {
+const About:React.FC = () => {
   return (
   <div className='about' id='about'>
    <img src={about2} alt='' style={{width:'100%'}}/>

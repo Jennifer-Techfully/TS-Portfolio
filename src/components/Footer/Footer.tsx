@@ -1,10 +1,10 @@
-
+import React from 'react'
 import './Footer.css'
 import footer from '../../img/footer.jpg'
 import { InstagramFilled,LinkedinFilled ,GithubFilled} from '@ant-design/icons'
 
 
-const Footer = () => {
+const Footer:React.FC = () => {
   return (
     <div className='footer'>
       <img src={footer}alt='' style={{width:'100%',height:"6rem",}}/>

@@ -3,7 +3,7 @@ import './Project.css'
 import project1 from '../../img/project1.jpg'
 import project2 from '../../img/project2.png'
 
-const Project = () => {
+const Project:React.FC = () => {
   return (
     <div className='project' id='project'>
      <h1>PROJECTS</h1>
