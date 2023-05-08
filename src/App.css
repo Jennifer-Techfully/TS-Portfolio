@@ -1,38 +1,19 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Roboto+Mono:wght@300&family=Schibsted+Grotesk&display=swap');
+:root{
+  --black:#1e1b1b;
+  --grey:#736666;
+  --light:#c8b1b1;
+  --white:#ffffff;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  scroll-behavior: smooth;
+  transition:all .2s linear;
+ 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  overflow: hidden;
+  font-family: 'Schibsted Grotesk', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content{
+  background: var(--light);
 }

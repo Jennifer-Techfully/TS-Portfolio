@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Roboto+Mono:wght@300&family=Schibsted+Grotesk&display=swap');
+.nav{
+    
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index: 100;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    background: var(--black);
+    justify-content: space-between;
+    padding: 6px 80px;
+    box-shadow: 0 0 5px 5px rgba(43, 41, 41, 0.6);
+    transition:0.6s;
+    scroll-behavior: smooth;
+    text-transform: uppercase;
+}
+   
+
+/*nav.sticky{
+    position:sticky;
+    top:0;
+    z-index: 100;
+}*/
+.n-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    
+}
+.n-left img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.n-left span{
+  color: var(--light);
+  font-family: 'Instrument Serif', serif;
+  text-transform: none;
+  font-size: 1rem;
+    
+}
+
+.n-right ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15rem;
+}
+.n-right ul li{
+     list-style: none;
+     padding: 0 15px;
+     position:relative;
+}
+.n-right ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--light);
+
+}
+.n-right ul li a:hover{
+    color:var(--white);
+}
+.n-right ul li a:hover::after,.n-right ul li a.active::after{
+    content:"";
+    width:30%;
+    height:2px;
+    background:var(--light);
+    position:absolute;
+    bottom:-4px;
+    left:16px;
+}

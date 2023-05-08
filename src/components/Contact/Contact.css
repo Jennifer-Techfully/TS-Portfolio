@@ -1,0 +1,77 @@
+.contact{
+    height:70vh;
+    padding:5rem;
+ 
+}
+.c-main{
+    margin:2rem 0rem;
+    padding:2rem;
+    background: #273f5b;
+    height:60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10rem;
+    color: var(--light ) ;
+}
+.c-left{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-left:10%;
+    gap:1rem;
+    margin-top:-8rem;
+}
+.c-left>:nth-child(1){
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.c-left>:nth-child(2){
+    font-size: 1rem;
+}
+.c-right{
+    display:flex;
+    justify-content: center;
+    flex:1;
+    position:relative;
+}
+.c-right form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+   
+}
+.c-right .user {
+    width:25rem;
+    height:2rem;
+    padding:0.3rem;
+    outline: none;
+    border: 1px solid #c8b1b1;
+    background: #273f5b;
+    color: var(--light);
+    font-size:16px;
+    
+}
+.c-right .user:hover{
+    background: rgba(99, 125, 152, 0.3);
+}
+.c-right .button{
+    width:10rem;
+    height:3rem;
+    margin-left:16rem;
+    border: 1px solid #c8b1b1;
+    background: #273f5b;
+    color: var(--light);
+    font-family:'Schibsted Grotesk', sans-serif; 
+}
+.c-right .button:hover{
+    background: rgba(99, 125, 152, 0.3);
+}
+textarea{
+    font-family:'Schibsted Grotesk', sans-serif; 
+    height: 6rem !important;
+}
+

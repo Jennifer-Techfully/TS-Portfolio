@@ -1,0 +1,33 @@
+.footer{
+    display:flex;
+    align-items:center;
+    position:relative;
+    background-color: #2f2021;
+    color: var(--white);
+    
+}
+.f-content{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:1rem;
+    width:100%;
+    gap:1rem;
+}
+.f-icons{
+   transform:scale(1.6);
+}
+.f-icons a{
+    color:var(--white);
+    padding: 3px 6px;
+    border-radius: 5px;
+ }
+.f-icons a:hover{
+    background:#333;
+}
+
+.f-content span{
+    font-size:14px;
+}
