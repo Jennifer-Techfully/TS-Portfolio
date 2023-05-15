@@ -17,17 +17,27 @@
     gap:1rem;
 }
 .f-icons{
-   transform:scale(1.6);
+    transform:scale(1.6);
 }
 .f-icons a{
     color:var(--white);
     padding: 3px 6px;
     border-radius: 5px;
- }
+}
 .f-icons a:hover{
     background:#333;
 }
 
 .f-content span{
     font-size:14px;
+}
+
+@media screen and (max-width:768px){
+   .f-icons{
+        transform:scale(1.2);
+    }
+     .f-content span{
+        font-size:12px;
+       
+    }
 }

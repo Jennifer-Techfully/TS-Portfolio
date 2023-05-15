@@ -4,12 +4,12 @@
     width:100%;
     position:fixed;
     top:0;
-    z-index: 100;
+    z-index: 1;
     display:flex;
     align-items: center;
     flex-direction: row;
     background: var(--black);
-    justify-content: space-between;
+   /*justify-content: center;*/
     padding: 6px 80px;
     box-shadow: 0 0 5px 5px rgba(43, 41, 41, 0.6);
     transition:0.6s;
@@ -17,17 +17,12 @@
     text-transform: uppercase;
 }
    
-
-/*nav.sticky{
-    position:sticky;
-    top:0;
-    z-index: 100;
-}*/
 .n-left{
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-right:25rem;
     gap:1rem;
+    
     
 }
 .n-left img{
@@ -41,17 +36,17 @@
   font-size: 1rem;
     
 }
-
 .n-right ul{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-right: 15rem;
-}
+     margin-left:9rem;
+    /* padding-right:15rem*/
+ }
 .n-right ul li{
      list-style: none;
      padding: 0 15px;
      position:relative;
+    
 }
 .n-right ul li a{
     text-decoration: none;
@@ -70,4 +65,77 @@
     position:absolute;
     bottom:-4px;
     left:16px;
+}
+.n-menu{
+     display:none;
+}
+
+
+
+@media screen and (max-width:768px){
+    .nav{
+        padding-left:1rem;
+    }
+    .n-left{
+        padding:1rem;
+    }
+    .n-right{
+    display:none;
+    }
+   .n-right-responsive {
+        position:absolute;
+        display:block;
+        background-color:var(--black);
+        left:0;
+        top:75px;
+        transition:all 0.5s ease-out;
+        width:100%;
+        /*padding-left:25%;*/
+    }
+     .n-right-responsive ul li{
+        list-style: none;
+        padding:15px;
+    }
+    /*.n-right-responsive ul li a{
+      color: var(--light);
+      text-align:center;
+      display: flex;
+      justify-content: center;
+      transition:all 0.5s ease;
+      list-style: none;
+      text-decoration: none;
+    }*/
+    .n-right-responsive ul li a{
+        color: var(--light);
+        display: flex;
+        justify-content: center;
+        transition:all 0.5s ease;
+        list-style: none;
+        text-decoration: none;
+        padding-right:25%
+    }
+   
+    .n-menu{
+        display:block;
+       position:absolute;
+        font-size: 30px;
+        color:var(--light);
+        background:var(--black);
+        margin-left:65%;
+        margin-bottom:2rem;
+        border:none ;
+        text-align: center;
+        height:2.5rem;
+        width:2.5rem;
+        
+    }
+   
+    .n-right-responsive ul li a:hover{
+            color: white;
+           
+    }
+    .theme{
+        float:left;
+    }
+        
 }

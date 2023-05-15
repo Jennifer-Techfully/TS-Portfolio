@@ -5,7 +5,6 @@
 .project h2{
     text-align: center;
 }
-
 .p-main{
     margin:1rem;
     border: 3px #273f5b;
@@ -52,29 +51,25 @@
     align-items: center;
     gap: 2rem;
 }
-
-
 .p-left{
     background: whitesmoke;
     margin: 30px;
-    
 }
 .p-left img{
-    margin:15px;
-    height:12rem;
-    width:18rem;
+    margin:20px;
+    height:10rem;
+    width:16rem;
     background:rgba(249,250,254,255);
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .p-left img:hover{
-   transform: scale(1.05);
+   transform: scale(1.1);
    transition:0.3s;
 }
 .p-right{
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
 }
 .p-right span:nth-child(1){
     font-size: 1rem;
@@ -89,7 +84,7 @@
 .p-right span:nth-child(3){
     font-size: 1rem;
     font-weight: 400;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 /*.p-bar{
     width: 80%;
@@ -98,3 +93,73 @@
     border:1px solid grey;
     background: var(--black);
 }*/
+.p-right .p-btn,.p-btn2{
+    width:5rem;
+    height: fit-content;
+    padding:6px;
+    position: relative;
+    overflow:hidden;
+    margin-top:20px;
+}
+.p-right .p-btn::before,.p-right .p-btn2::before{
+   top:0;
+   left:0;
+   position:absolute;
+   content:'Github';
+   height:100%;
+   width:100%;
+   transform:translateY(-100%);
+   background-color:rgb(34, 34, 35);
+   color: var(--white);
+   transition:transform 1s;
+   display:flex;
+   align-items:center;
+   justify-content: center;
+}
+
+.p-right .p-btn:hover::before{
+    transform:translateY(0)
+
+}
+.p-right .btn2::before{
+    content:'Demo'
+}
+
+@media screen and (max-width:600px){
+    .project{
+       padding: 5rem 2rem 2rem;
+       height:150vh;
+    }
+    .p-main{
+        margin:0;
+    }
+    .p-up{
+        display:flex;
+        flex-direction: column;
+        padding-bottom:2rem;
+       
+    }
+    .p-left{
+      margin-bottom:-1rem;
+    }
+    .p-left img{
+        height:10rem;
+        width:16rem;
+    }
+    .p-right{
+        padding-top:-10rem;
+        text-align: center;
+    }
+    .p-right span:nth-child(1){
+        font-size: 14px;
+    }
+    .p-right span:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .p-right span:nth-child(3){
+        font-size: 14px;
+        text-align:inherit;
+        padding:0 2rem;
+       
+    }
+}

@@ -15,7 +15,10 @@ const Project:React.FC = () => {
              <div className='p-right'>
               <span>UI&UX</span>
               <span>E-commerce  Website</span>
-              <span>I have designed a E-ommerce Website for gym products.The commodities in the website is catagorized into Men's and Women's Apparels.The Technologies used are HTML,CSS,Javascript.</span>
+              <span>I have designed a E-ommerce Website for gym products.The commodities in the website is catagorized into Men-Women Apparels,Acessories,Gym Equipments.The Technologies used are HTML,CSS,Javascript.</span>
+              <a href='https://github.com/Jennifer-christy/first-pro.git'>
+                <button className='p-btn'>View</button>
+              </a>
              </div>
         </div>
 
@@ -28,7 +31,9 @@ const Project:React.FC = () => {
              <div className='p-right'>
               <span>React-js</span>
               <span>Personal Porfolio</span>
-              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, pariatur optio numquam laborum ducimus veritatis velit temporibus earum. Tenetur provident quibusdam sunt cupiditate, quas quasi corrupti deserunt magnam assumenda. At?</span>
+              <span>I have created a Portfolio website using HTML,CSS,React Js.This project Comprises of Header,Footer,Content and further the content is divided into Four subdivisons such as Home,About,Projects and Contact.</span>
+              <a href='https://jenniportfolio.netlify.app/'>
+              <button className='p-btn btn2'> View </button></a>
              </div>
         </div>
 

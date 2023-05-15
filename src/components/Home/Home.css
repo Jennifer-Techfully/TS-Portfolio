@@ -5,13 +5,14 @@
     gap: 2rem;
     align-items: center;
     justify-content:center;
-    padding:2rem;
+    
 }
+
 .h-left{
     display:flex;
     flex-direction: column;
     flex:1;
-    padding:3rem;
+    padding:5rem;
     position: relative;
 }
 .h-name{
@@ -19,12 +20,12 @@
     flex-direction:column;
 }
 .h-name >:nth-child(1){
-   color:var(--black);
+   /*color:var(--black);*/
    font-weight:bold;
    font-size:3.5rem;
 }
 .h-name >:nth-child(2){
-    color:var(--black);
+   /*color:var(--black);*/
     font-weight:bold;
     font-size:4rem;
 } 
@@ -34,20 +35,20 @@
    margin-top:12px;
 }
 .h-right{
-     margin:5rem 4rem 0 0;
+    margin:5rem 7rem 0 0;
     /* margin:10rem -2rem 0 0;*/
      /*box-shadow: 0 0 5px 5px rgba(214, 203, 203, 0.6);margin:30px;*/
    
 }
 .h-right .h-picture{
-   /*background-color: rgb(129, 134, 139);*/
-   box-shadow: 0 0 5px 5px rgba(214, 203, 203, 0.6)
+    /*background-color: rgb(129, 134, 139);*/
+    box-shadow: 0 0 5px 5px rgba(214, 203, 203, 0.6)
 }
 
 .h-right img{
-   transform: scale(0.7);
-   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-   /*box-shadow: 0 0 5px 5px rgba(214, 203, 203, 0.6);margin:30px*/
+    transform: scale(0.7);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    /*box-shadow: 0 0 5px 5px rgba(214, 203, 203, 0.6);margin:30px*/
 }
 .h-right img:hover{
     transform:scale(0.8);
@@ -71,7 +72,47 @@ button:hover{
 button a{
     text-decoration: none;
     color: black;
-   
     font-weight:600;
 }
 
+
+
+
+
+@media screen and (max-width:600px){
+    
+      .home{
+         padding-top:30%;
+         display:flex;
+         flex-direction: column;
+    }
+      .h-left{
+       padding:2rem;
+    }
+      .h-name >:nth-child(1){
+       font-size:2.5rem;
+    }
+      .h-name >:nth-child(2){
+        font-size:2.5rem;
+    }
+      .h-name >:nth-child(3){
+        font-size:1rem;
+    }
+      .h-right{
+        margin:1rem 1rem 0 0;
+    }
+      .h-right img{
+       height:20rem;
+       width:21rem;
+    }
+      .h-right img:hover{
+        transform:scale(1);
+        transition: 1s;
+    }    
+      button{
+        margin-top: 2rem;
+        width:30%;
+        height:2rem;
+        
+    }
+}

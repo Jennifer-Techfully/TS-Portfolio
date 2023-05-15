@@ -1,0 +1,45 @@
+body.light {
+    background: var(--light)
+    /*linear-gradient(45deg,#c8b1b1 ,#a59898)*/;
+    color:var(--black);
+  }
+  body.dark {
+    background:#1d1f25;
+    color: var(--light);
+    
+    .h-right .h-picture{
+      box-shadow: 0 0 5px 5px rgba(90, 87, 87, 0.6)
+    }
+    .h-right img{
+      box-shadow: 0 14px 28px rgb(16, 20, 38,0.6), 0 10px 10px rgba(18, 17, 17, 0.22);
+    }
+  }
+  
+  .toggle button{
+    margin:0 1rem;
+    height:2rem;
+    width:5rem;
+    background-color: var(--black);
+    color: var(--light);
+    border-radius:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3px 3px rgba(90, 87, 87, 0.6);
+    text-transform: uppercase;
+ 
+  }
+  .toggle .toggle-icon{
+    padding: 4px 4px 0px 4px;
+  
+  }
+  .toggle .toggle-text{
+    padding:5px;
+    font-family: none;
+    text-align: end;
+   
+  }
+  
+
+  
+  

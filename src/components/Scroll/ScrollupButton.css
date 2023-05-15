@@ -1,0 +1,28 @@
+.scroll-up-button {
+    position: fixed;
+    bottom: 20px;
+    background: var(--light);
+    border: none;
+    color:rgb(16, 15, 15);
+    width: 2rem;
+    height:2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    right:1rem;
+    margin-top: 5rem;;
+  }
+  
+  .scroll-up-button:hover {
+    background-color:var(--grey);
+  }
+  .up-icon{
+    transform: scale(1.2);
+  }
+
+
+  @media screen and (max-width:768px){
+   .scroll-up-button{
+    right:1px;
+    }
+  }

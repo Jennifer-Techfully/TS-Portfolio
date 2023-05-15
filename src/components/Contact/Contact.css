@@ -29,7 +29,7 @@
 }
 
 .c-left>:nth-child(2){
-    font-size: 1rem;
+    font-size:1rem;
 }
 .c-right{
     display:flex;
@@ -75,3 +75,48 @@ textarea{
     height: 6rem !important;
 }
 
+
+@media screen and (max-width:600px){
+    .contact{
+       padding:5rem 3rem 15rem 3rem;
+       height:50vh;
+    }
+    .c-main{
+        display:flex;
+        flex-direction: column;
+        margin:0;
+        padding:0;
+        height:80vh;
+        gap:3rem;
+    }
+     .c-left{
+        margin-left:0rem;
+        margin-top:3rem;
+    }
+    .c-left>:nth-child(1){
+        font-size: 1.5rem;
+    }
+    .c-left>:nth-child(2){
+        font-size: 10px;
+    }
+   
+    .c-right{
+        padding-top:0;
+        padding-bottom: 3rem;
+        flex:0;
+        position:relative;
+    }
+    .c-right .user {
+        width:16rem;
+        height:2rem;
+        
+    }
+    .c-right .button{
+        width:6rem;
+        height:2rem;
+        margin-left:10rem;
+    }
+
+
+   
+}

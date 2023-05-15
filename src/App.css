@@ -4,6 +4,7 @@
   --grey:#736666;
   --light:#c8b1b1;
   --white:#ffffff;
+  --blue:#273f5b;
 }
 *{
   scroll-behavior: smooth;
@@ -11,9 +12,12 @@
  
 }
 .App{
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: 'Schibsted Grotesk', sans-serif;
 }
 .content{
-  background: var(--light);
+   margin-top: 1rem;
+ }
+&&::-webkit-scrollbar{
+  display:none
 }

@@ -1,8 +1,7 @@
 .skill{
    height:45vh;
-
    /*padding:6rem 30% 2rem;*/
-   padding:6rem  30% ;
+   padding:6rem 32% 6rem 30% ;
    list-style: none;
 }
 .s-main{
@@ -95,4 +94,13 @@ h1{
     100%{
         width:60%;
     }
+}
+
+
+@media only screen and (max-width:600px){
+    .skill{
+       padding:25% 20% 30% 15%  ;
+       height:50vh;
+     
+     }
 }

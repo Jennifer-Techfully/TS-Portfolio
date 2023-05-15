@@ -1,6 +1,7 @@
 import React from 'react'
 import './Skill.css'
 
+
 const Skill:React.FC = () => {
   return (
   <div className='skill' id='skill'>

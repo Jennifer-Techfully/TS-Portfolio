@@ -12,13 +12,13 @@ const Footer:React.FC = () => {
        <span>jenniferchristy06@gmail.com</span>
        <div className='f-icons'>
          <a href='https://www.instagram.com/jenniferchristy06/'>
-         <InstagramFilled/>
+          <InstagramFilled/>
          </a>
          <a href='https://github.com/Jennifer-christy'>
-         <GithubFilled/>
+          <GithubFilled/>
          </a>
          <a href='https://www.linkedin.com/in/jennifer-christy-ba9ab5255?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVVNaodFkRImuf3KQUgwBAA%3D%3D'>
-         <LinkedinFilled/>
+          <LinkedinFilled/>
          </a>
        </div>
       </div>

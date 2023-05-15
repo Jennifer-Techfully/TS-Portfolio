@@ -4,31 +4,8 @@
     position:relative;
     display:flex;
 }
-/*.a-main{
-    margin:2rem;
-    margin-right:7rem;
-    position:absolute;
-    display: flex;
-    gap:5rem;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-} 
-.a-right{
-    display: flex;
-    flex-direction: column;
-    padding:8rem;
-    color:var(--light);
-    
-}
-.a-right>:nth-child(1){
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-.a-right>:nth-child(2){
-    margin-top: 1rem;
-    font-size: 16px;
-}*/
 .a-main{
-    margin:4rem;
+    margin:3rem 5rem 5rem 5rem;
     position:absolute;
     display: flex;
     gap:2rem;
@@ -37,24 +14,90 @@
 } 
 .a-main img{
     height: 250px;
-    margin-top:1rem;
+    margin-top:2rem;
 }
+
 .a-main .a-text{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin-bottom:1rem;
 }
+
 .a-main .a-text span:nth-child(1){
     font-size:2rem;
     font-weight:bold;
     margin-right:14rem;
+    margin-bottom:1rem;
+    
 }
 
 .a-main .a-text span:nth-child(2){
-  text-align:justify;
-  padding:2rem;
-  padding-right:10rem;
+    text-align:inherit;
+    padding: 0rem 2rem;
+    padding-right:10rem;
+}
+.resume{
+    position:absolute;
+    bottom:-2rem;
+    margin:5px 15rem 0 0;
+    
+}
+.r-btn{
+    height:2rem;
+    width:6rem;
+    background: var(--blue);
+    color: var(--light);
+    border:1px solid var(--light);
+}
+
+
+@media screen and (max-width:600px){
+    .about{
+        padding:10rem 2rem 2rem 2rem;
+        height: 100vh;
+        position:relative;
+    }
+    .a-main{
+        margin:1rem 1rem 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+    } 
+    .a-main img{
+        height: 150px;
+        margin-right: 1rem;
+    }
+    .a-main .a-text{
+        padding-bottom:-1rem;
+        
+    }
+    .a-main .a-text span:nth-child(1){
+        font-size:1.5rem;
+        margin:1rem 2rem 0 0;
+       
+        
+    }
+    .a-main .a-text span:nth-child(2){
+        padding:1rem 2rem 0rem 1rem;
+        font-size: 13px;
+        text-align:center;
+     
+    }
+    .resume{
+        position:absolute;
+        bottom:-3rem;
+        padding:0 2rem;
+        margin-left:13rem
+    }
+    .r-btn{
+        height:2rem;
+        width:4rem;
+        font-size: 10px;
+    }
+
 }
 
 
