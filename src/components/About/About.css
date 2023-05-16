@@ -11,10 +11,12 @@
     gap:2rem;
     align-items: center;
     color: var(--light);
+ 
 } 
 .a-main img{
     height: 250px;
     margin-top:2rem;
+   
 }
 
 .a-main .a-text{

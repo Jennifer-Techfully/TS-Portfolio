@@ -60,7 +60,7 @@
 .n-right ul li a:hover::after,.n-right ul li a.active::after{
     content:"";
     width:30%;
-    height:2px;
+    height:1px;
     background:var(--light);
     position:absolute;
     bottom:-4px;

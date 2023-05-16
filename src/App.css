@@ -9,10 +9,9 @@
 *{
   scroll-behavior: smooth;
   transition:all .2s linear;
- 
-}
+ }
 .App{
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   font-family: 'Schibsted Grotesk', sans-serif;
 }
 .content{

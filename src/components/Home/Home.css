@@ -42,7 +42,8 @@
 }
 .h-right .h-picture{
     /*background-color: rgb(129, 134, 139);*/
-    box-shadow: 0 0 5px 5px rgba(214, 203, 203, 0.6)
+    box-shadow: 0 0 5px 5px rgba(214, 203, 203, 0.6);
+    
 }
 
 .h-right img{
@@ -54,7 +55,6 @@
     transform:scale(0.8);
     transition: 1s;
 }
-
 
 button{
     margin-top: 2rem;
