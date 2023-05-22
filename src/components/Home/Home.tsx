@@ -15,7 +15,6 @@ const Home:React.FC = () => {
             <span>Jennifer Christy</span>
             <span>I'm an Engineering graduate and I hold a Certification in FullStack Development.I'm currently working at Techfully as a Junior Java Developer.</span>
             <button><a href='#contact'>HIRE ME </a></button>
-            {/*<a href={resume} download><button>Resume</button></a>*/}
           </div>
        </div>
 

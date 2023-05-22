@@ -11,7 +11,7 @@ const Navbar:React.FC= () => {
    
   return (
     
-    <div className='nav'>
+    <div className='nav' >
         <div className='n-left'>
           <a href='#home'>
            <img  src={logo}alt=''/>
@@ -21,10 +21,9 @@ const Navbar:React.FC= () => {
         </div>
         
      
-        <div className={state ?'n-right-responsive' : 'n-right'} 
-        onClick={()=> setState(false)}>
-          <ul>
-             <li ><a className ="active" href='#home'>Home </a></li>
+        <div className={state ?'n-right-responsive' : 'n-right'} >
+          <ul  onClick={()=> setState(false)} >
+              <li ><a className ="active" href='#home'>Home </a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#project">Project </a></li>
               <li><a href="#skill">Skills </a></li>
@@ -32,8 +31,7 @@ const Navbar:React.FC= () => {
           </ul>
         </div>
           
-       <button className='n-menu'
-       onClick={()=> setState(!state)} >
+       <button className='n-menu' onClick={()=> setState(!state)}>
        {state ?(<CloseOutlined/>):(<MenuOutlined/>)}
        </button>
       

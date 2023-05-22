@@ -92,7 +92,7 @@
         width:100%;
         /*padding-left:25%;*/
     }
-     .n-right-responsive ul li{
+    .n-right-responsive ul li{
         list-style: none;
         padding:15px;
     }
@@ -114,7 +114,6 @@
         text-decoration: none;
         padding-right:25%
     }
-   
     .n-menu{
         display:block;
        position:absolute;
@@ -129,8 +128,7 @@
         width:2.5rem;
         
     }
-   
-    .n-right-responsive ul li a:hover{
+   .n-right-responsive ul li a:hover{
             color: white;
            
     }

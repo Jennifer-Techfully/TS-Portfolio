@@ -1,6 +1,49 @@
-
-
 import React, { useState, useEffect } from 'react';
+import './ThemeToggle.css';
+
+import { FaRegMoon } from 'react-icons/fa';
+import { IoMdSunny } from 'react-icons/io';
+
+type Theme = 'light' | 'dark';
+
+function ThemeToggle() {
+  const [theme, setTheme] = useState<Theme>(() => {
+    const preferredTheme = localStorage.getItem('theme') as Theme | null;
+    return preferredTheme || 'light';
+  });
+
+  useEffect(() => {
+    document.body.className = theme;
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    /*setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));*/
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
+  return (
+    <div className='toggle'>
+      <button onClick={toggleTheme}>
+        <span className='toggle-icon'>
+          {theme === 'light' ? <FaRegMoon /> : <IoMdSunny />}
+        </span>
+        <span className='toggle-text'>
+          {theme === 'light' ? 'Dark' : 'Light'}
+        </span>
+      </button>
+    </div>
+  );
+}
+
+export default ThemeToggle;
+
+
+
+
+
+
+/*import React, { useState, useEffect } from 'react';
 import './ThemeToggle.css';
 
 import { FaRegMoon } from 'react-icons/fa'
@@ -28,10 +71,13 @@ function ThemeToggle() {
     
     document.body.className = theme;
     localStorage.setItem('theme', theme);
-  }, [theme]);
+  },[theme]);
+
+
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
+   
   };
 
   return (
@@ -49,5 +95,50 @@ function ThemeToggle() {
   );
 }
 
-export default ThemeToggle;
+export default ThemeToggle;*/
+
+/*import React, { useState, useEffect } from 'react';
+import './ThemeToggle.css';
+
+import { FaRegMoon } from 'react-icons/fa';
+import { IoMdSunny } from 'react-icons/io';
+
+type Theme = 'light' | 'dark';
+
+function ThemeToggle() {
+  const [theme, setTheme] = useState<Theme>(() => {
+    const preferredTheme = localStorage.getItem('theme') as Theme | null;
+    if (preferredTheme) {
+      return preferredTheme;
+    }
+    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return userPrefersDark ? 'dark' : 'light';
+  });
+
+  useEffect(() => {
+    document.body.className = theme;
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
+
+  return (
+    <div className='toggle'>
+      <button onClick={toggleTheme}>
+        <span className='toggle-icon'>
+          {theme === 'light' ? <FaRegMoon /> : <IoMdSunny />}
+        </span>
+        <span className='toggle-text'>
+          {theme === 'light' ? 'Dark' : 'Light'}
+        </span>
+      </button>
+    </div>
+  );
+}
+
+export default ThemeToggle;*/
+
+
 
